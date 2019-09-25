@@ -1,0 +1,27 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+
+# Uncomment this to turn on verbose mode.
+#export DH_VERBOSE=1
+
+include /usr/share/dpkg/architecture.mk
+
+ifneq ($(filter $(DEB_HOST_ARCH),mips mipsel),)
+	export PLATFORM_LDFLAGS=-latomic
+endif
+
+override_dh_auto_build:
+	PORTABLE=1 make all
+	PORTABLE=1 make shared_lib
+
+override_dh_auto_install:
+	dh_auto_install --destdir=$(CURDIR)/debian/tmp/usr/
+
+override_dh_missing:
+	dh_missing --list-missing
+
+%:
+	dh $@
+
+.PHONY: override_dh_auto_build override_dh_auto_test \
+	override_dh_auto_install override_dh_missing

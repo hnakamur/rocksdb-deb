@@ -1,0 +1,249 @@
+rocksdb (6.2.4-2) experimental; urgency=medium
+
+  * Fix ARM64 FTBFS.
+
+ -- Laszlo Boszormenyi (GCS) <gcs@debian.org>  Wed, 25 Sep 2019 19:16:57 +0000
+
+rocksdb (6.2.4-1) experimental; urgency=medium
+
+  * New upstream release.
+
+ -- Laszlo Boszormenyi (GCS) <gcs@debian.org>  Tue, 24 Sep 2019 15:43:08 +0000
+
+rocksdb (6.2.2-1) experimental; urgency=medium
+
+  * New upstream release.
+  * Library transition from librocksdb6.1 to librocksdb6.2 .
+
+ -- Laszlo Boszormenyi (GCS) <gcs@debian.org>  Sat, 17 Aug 2019 14:28:39 +0000
+
+rocksdb (6.1.2-1) experimental; urgency=medium
+
+  * New upstream release.
+  * Library transition from librocksdb5.17 to librocksdb6.1 .
+  * Fix FTBFS with GCC 9 (closes: #925818).
+
+ -- Laszlo Boszormenyi (GCS) <gcs@debian.org>  Sun, 14 Jul 2019 05:31:06 +0000
+
+rocksdb (5.17.2-3) unstable; urgency=medium
+
+  * Backport fix for snprintf() buffer overflow.
+  * Upload to Sid.
+
+ -- Laszlo Boszormenyi (GCS) <gcs@debian.org>  Wed, 19 Dec 2018 17:01:38 +0000
+
+rocksdb (5.17.2-2) experimental; urgency=medium
+
+  * Backport upstream fix for db_bench_tool.cc FTBFS.
+
+ -- Laszlo Boszormenyi (GCS) <gcs@debian.org>  Sun, 09 Dec 2018 06:00:39 +0000
+
+rocksdb (5.17.2-1) experimental; urgency=medium
+
+  * New upstream release.
+  * Library transition from librocksdb5.15 to librocksdb5.17 .
+
+ -- Laszlo Boszormenyi (GCS) <gcs@debian.org>  Thu, 22 Nov 2018 16:25:48 +0100
+
+rocksdb (5.15.10-2) unstable; urgency=medium
+
+  * Remove ppc64 from build architectures, upstream doesn't want to
+    support it.
+  * Upload to Sid.
+
+ -- Laszlo Boszormenyi (GCS) <gcs@debian.org>  Wed, 21 Nov 2018 21:07:17 +0000
+
+rocksdb (5.15.10-1) experimental; urgency=medium
+
+  * New major upstream release.
+  * Library transition from librocksdb5.14 to librocksdb5.15 .
+
+ -- Laszlo Boszormenyi (GCS) <gcs@debian.org>  Tue, 18 Sep 2018 20:52:12 +0000
+
+rocksdb (5.14.3-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Update Standards-Version to 4.2.1 .
+
+ -- Laszlo Boszormenyi (GCS) <gcs@debian.org>  Sat, 01 Sep 2018 17:57:29 +0000
+
+rocksdb (5.14.2-2) unstable; urgency=medium
+
+  * Backport fix for GCC 8 build (closes: #897848).
+  * Upload to Sid.
+
+ -- Laszlo Boszormenyi (GCS) <gcs@debian.org>  Tue, 17 Jul 2018 16:29:50 +0000
+
+rocksdb (5.14.2-1) experimental; urgency=medium
+
+  * New upstream release.
+  * Library transition from librocksdb5.13 to librocksdb5.14 .
+  * Update Standards-Version to 4.1.5 .
+
+ -- Laszlo Boszormenyi (GCS) <gcs@debian.org>  Fri, 06 Jul 2018 16:48:10 +0000
+
+rocksdb (5.13.4-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Laszlo Boszormenyi (GCS) <gcs@debian.org>  Thu, 28 Jun 2018 19:08:40 +0000
+
+rocksdb (5.13.3-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Laszlo Boszormenyi (GCS) <gcs@debian.org>  Wed, 13 Jun 2018 17:48:14 +0000
+
+rocksdb (5.13.2-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Laszlo Boszormenyi (GCS) <gcs@debian.org>  Mon, 28 May 2018 15:58:06 +0000
+
+rocksdb (5.13.1-1) experimental; urgency=medium
+
+  * New upstream release.
+  * Library transition from librocksdb5.12 to librocksdb5.13 .
+
+ -- Laszlo Boszormenyi (GCS) <gcs@debian.org>  Mon, 21 May 2018 18:16:47 +0000
+
+rocksdb (5.12.4-1) experimental; urgency=medium
+
+  * New upstream release.
+  * Add mips{,el} architectures to compile on.
+
+ -- Laszlo Boszormenyi (GCS) <gcs@debian.org>  Tue, 24 Apr 2018 16:40:29 +0000
+
+rocksdb (5.12.2-1) experimental; urgency=medium
+
+  * New upstream release.
+  * Library transition from librocksdb5.11 to librocksdb5.12 .
+  * Update Standards-Version to 4.1.4 .
+
+ -- Laszlo Boszormenyi (GCS) <gcs@debian.org>  Tue, 17 Apr 2018 23:56:38 +0000
+
+rocksdb (5.11.3-2) unstable; urgency=medium
+
+  * Upload to Sid.
+
+ -- Laszlo Boszormenyi (GCS) <gcs@debian.org>  Sun, 08 Apr 2018 09:35:11 +0000
+
+rocksdb (5.11.3-1) experimental; urgency=medium
+
+  * New upstream release.
+  * Add s390x architecture to compile on.
+  * Add i386 architecture to compile on (closes: #893073).
+  * Library transition from librocksdb5.10 to librocksdb5.11 .
+
+  [ zhsj <zsj950618@gmail.com> ]
+  * Fix shared library compile on ppc (closes: #893173).
+  * Fix wrong length in snprintf() .
+
+ -- Laszlo Boszormenyi (GCS) <gcs@debian.org>  Sat, 17 Mar 2018 08:36:43 +0000
+
+rocksdb (5.10.4-2) unstable; urgency=medium
+
+  * Upload to Sid.
+
+ -- Laszlo Boszormenyi (GCS) <gcs@debian.org>  Wed, 07 Mar 2018 18:43:15 +0000
+
+rocksdb (5.10.4-1) experimental; urgency=medium
+
+  * New upstream release.
+  * Make the build verbose.
+  * Don't specify parallel to debhelper.
+  * Update Standards-Version to 4.1.3 .
+  * Library transition from librocksdb5.9 to librocksdb5.10 .
+
+ -- Laszlo Boszormenyi (GCS) <gcs@debian.org>  Mon, 05 Mar 2018 15:23:49 +0000
+
+rocksdb (5.9.2-1) experimental; urgency=medium
+
+  * New upstream release.
+  * Library transition from librocksdb5.8 to librocksdb5.9 .
+  * Add tools package (closes: #885207).
+  * Add liblz4-dev and libzstd-dev to build dependencies for data compression
+    support.
+
+ -- Laszlo Boszormenyi (GCS) <gcs@debian.org>  Wed, 27 Dec 2017 11:00:10 +0000
+
+rocksdb (5.8.8-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Update debhelper level to 11 .
+  * Update Standards-Version to 4.1.2:
+    - remove librocksdb5.8-dbg package and use the auto-generated one.
+
+ -- Laszlo Boszormenyi (GCS) <gcs@debian.org>  Tue, 19 Dec 2017 20:38:27 +0000
+
+rocksdb (5.8.7-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Laszlo Boszormenyi (GCS) <gcs@debian.org>  Sun, 03 Dec 2017 14:13:31 +0000
+
+rocksdb (5.8.6-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Laszlo Boszormenyi (GCS) <gcs@debian.org>  Wed, 22 Nov 2017 22:57:10 +0000
+
+rocksdb (5.8-2) unstable; urgency=medium
+
+  * Upload to Sid.
+
+ -- Laszlo Boszormenyi (GCS) <gcs@debian.org>  Mon, 13 Nov 2017 17:15:51 +0000
+
+rocksdb (5.8-1) experimental; urgency=medium
+
+  * New upstream release:
+    - update copyright to dual GPLv2 or Apache 2.0 licenses.
+  * Library transition from librocksdb5.7 to librocksdb5.8 .
+  * Move librocksdb.so.5 to the -dev package.
+  * Update Standards-Version to 4.1.1 .
+
+ -- Laszlo Boszormenyi (GCS) <gcs@debian.org>  Sun, 01 Oct 2017 07:44:53 +0000
+
+rocksdb (5.7.3-2) unstable; urgency=medium
+
+  * Upload to Sid.
+  * Update Standards-Version to 4.1.0:
+    - change librocksdb5.7-dbg priority to optional.
+
+ -- Laszlo Boszormenyi (GCS) <gcs@debian.org>  Sat, 23 Sep 2017 15:29:14 +0000
+
+rocksdb (5.7.3-1) experimental; urgency=low
+
+  * New upstream release:
+    - builds with GCC 7 (closes: #853645).
+  * Remove unneeded build dependencies.
+  * Drop outdated patches.
+  * Update remaining patches.
+  * Library transition from librocksdb4.5 to librocksdb5.7 .
+  * Update Standards-Version to 4.0.0 and debhelper level to 10 .
+
+ -- Laszlo Boszormenyi (GCS) <gcs@debian.org>  Wed, 06 Sep 2017 20:00:44 +0000
+
+rocksdb (4.5.1-2) unstable; urgency=low
+
+  * Conflict with and replace 4.1 version of library (closes: #824760).
+  * Don't use omit-leaf-frame-pointer compiler switch on mips64el and sparc64.
+
+ -- Laszlo Boszormenyi (GCS) <gcs@debian.org>  Sun, 22 May 2016 16:18:51 +0000
+
+rocksdb (4.5.1-1) unstable; urgency=low
+
+  * New upstream release.
+  * Build portable binaries (closes: #814132).
+  * Limit building to Linux 64 bit archs (closes: #814135).
+  * Tighten g++ build dependency to 4.8 and onwards (closes: #819063).
+  * Update library symbols, but disable it for now.
+  * Update Standards-Version to 3.9.8 .
+
+ -- Laszlo Boszormenyi (GCS) <gcs@debian.org>  Thu, 28 Apr 2016 18:25:31 +0000
+
+rocksdb (4.1-1) unstable; urgency=low
+
+  * Initial upload (closes: #793491).
+
+ -- Laszlo Boszormenyi (GCS) <gcs@debian.org>  Thu, 10 Dec 2015 18:41:55 +0100
