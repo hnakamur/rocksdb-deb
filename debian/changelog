@@ -1,3 +1,9 @@
+rocksdb (6.5.2-1ppa1~bionic) bionic; urgency=medium
+
+  * New upstream version 6.5.2
+
+ -- Hiroaki Nakamura <hnakamur@gmail.com>  Sun, 15 Dec 2019 10:52:00 +0900
+
 rocksdb (6.2.4-2ppa1~bionic) bionic; urgency=medium
 
   * Port to Ubuntu 18.04 LTS.
