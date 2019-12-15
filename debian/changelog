@@ -1,3 +1,9 @@
+rocksdb (6.5.2-1ppa3~bionic) bionic; urgency=medium
+
+  * Add USE_RTTI=1
+
+ -- Hiroaki Nakamura <hnakamur@gmail.com>  Sun, 15 Dec 2019 23:26:17 +0900
+
 rocksdb (6.5.2-1ppa2~bionic) bionic; urgency=medium
 
   * Update package name to librocksdb6.5
