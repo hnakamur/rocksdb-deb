@@ -9,9 +9,9 @@ Homepage: https://rocksdb.org/
 Package: librocksdb-dev
 Section: libdevel
 Architecture: amd64 arm64 ppc64el mips mipsel mips64el sparc64 s390x i386
-Depends: ${misc:Depends}, librocksdb6.2 (= ${binary:Version})
-Conflicts: librocksdb5.7
-Replaces: librocksdb5.7
+Depends: ${misc:Depends}, librocksdb6.5 (= ${binary:Version})
+Conflicts: librocksdb5.8
+Replaces: librocksdb5.8
 Description: persistent Key-Value Store for Flash and RAM Storage (development)
  C++ library providing an embedded key-value store, where keys and values are
  arbitrary byte streams. It was developed at Facebook based on LevelDB and
@@ -36,7 +36,7 @@ Description: persistent Key-Value Store for Flash and RAM Storage (development)
  This package contains libraries and header files for developing
  applications that use librocksdb .
 
-Package: librocksdb6.2
+Package: librocksdb6.5
 Section: libs
 Architecture: amd64 arm64 ppc64el mips mipsel mips64el sparc64 s390x i386
 Depends: ${misc:Depends}, ${shlibs:Depends}
