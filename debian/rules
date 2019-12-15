@@ -11,8 +11,8 @@ ifneq ($(filter $(DEB_HOST_ARCH),mips mipsel),)
 endif
 
 override_dh_auto_build:
-	PORTABLE=1 make all
-	PORTABLE=1 make shared_lib
+	USE_RTTI=1 PORTABLE=1 make all
+	USE_RTTI=1 PORTABLE=1 make shared_lib
 
 override_dh_auto_install:
 	dh_auto_install --destdir=$(CURDIR)/debian/tmp/usr/
