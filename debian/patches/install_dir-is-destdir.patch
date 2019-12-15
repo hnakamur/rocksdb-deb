@@ -4,9 +4,9 @@ Author: Laszlo Boszormenyi (GCS) <gcs@debian.org>
 
 ---
 
---- rocksdb-3.11.2.orig/Makefile
-+++ rocksdb-3.11.2/Makefile
-@@ -1415,6 +1415,7 @@ ldb: tools/ldb.o $(LIBOBJECTS)
+--- a/Makefile
++++ b/Makefile
+@@ -1658,6 +1658,7 @@
  
  #-------------------------------------------------
  # make install related stuff

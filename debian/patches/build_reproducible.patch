@@ -1,8 +1,6 @@
-diff --git a/Makefile b/Makefile
-index a98aa5b..e58088d 100644
 --- a/Makefile
 +++ b/Makefile
-@@ -283,7 +283,12 @@ LDFLAGS += $(PLATFORM_LDFLAGS)
+@@ -390,7 +390,12 @@
  # If NO_UPDATE_BUILD_VERSION is set we don't update util/build_version.cc, but
  # the file needs to already exist or else the build will fail
  ifndef NO_UPDATE_BUILD_VERSION

@@ -6,9 +6,9 @@ Last-Update: 2018-03-05
 
 ---
 
---- rocksdb-5.10.4.orig/Makefile
-+++ rocksdb-5.10.4/Makefile
-@@ -130,7 +130,7 @@ endif
+--- a/Makefile
++++ b/Makefile
+@@ -171,7 +171,7 @@
  #-----------------------------------------------
  include src.mk
  
