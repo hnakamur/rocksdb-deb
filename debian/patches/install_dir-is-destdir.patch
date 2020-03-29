@@ -6,7 +6,7 @@ Author: Laszlo Boszormenyi (GCS) <gcs@debian.org>
 
 --- a/Makefile
 +++ b/Makefile
-@@ -1658,6 +1658,7 @@
+@@ -1712,6 +1712,7 @@
  
  #-------------------------------------------------
  # make install related stuff
