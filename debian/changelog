@@ -1,3 +1,10 @@
+rocksdb (6.7.3-1ppa1~bionic) bionic; urgency=medium
+
+  * New upstream version 6.7.3
+  * Update debian/patches/install_dir-is-destdir.patch
+
+ -- Hiroaki Nakamura <hnakamur@gmail.com>  Mon, 30 Mar 2020 06:53:45 +0900
+
 rocksdb (6.5.2-1ppa3~bionic) bionic; urgency=medium
 
   * Add USE_RTTI=1
